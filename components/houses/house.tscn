@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://d4e6s4v0cljlc"]
+
+[ext_resource type="Texture2D" uid="uid://covdke8jpvapq" path="res://art/house.png" id="1_6dyhn"]
+[ext_resource type="Script" uid="uid://dghwas7iq4tth" path="res://scripts/house.gd" id="1_fab6u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fab6u"]
+size = Vector2(87, 83.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dyhn"]
+size = Vector2(160, 160)
+
+[node name="house" type="Node" unique_id=2102510921]
+script = ExtResource("1_fab6u")
+
+[node name="houseee" type="RigidBody2D" parent="." unique_id=801146595]
+position = Vector2(289, 569)
+
+[node name="Sprite2D" type="Sprite2D" parent="houseee" unique_id=1111146000]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_6dyhn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="houseee" unique_id=57726236]
+shape = SubResource("RectangleShape2D_fab6u")
+
+[node name="Area2D" type="Area2D" parent="houseee" unique_id=1416707288]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="houseee/Area2D" unique_id=720349410]
+shape = SubResource("RectangleShape2D_6dyhn")
+
+[connection signal="body_entered" from="houseee/Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="houseee/Area2D" to="." method="_on_body_exited"]
