@@ -1,0 +1,44 @@
+GIMP Palette
+Name: Custom Pixel Palette
+Columns: 8
+#
+199 208 184   OffWhite-Shadow
+228 237 207   OffWhite-Mid
+248 255 229   OffWhite-Base
+255 255 255   OffWhite-Highlight
+243 240 210   OffWhite-WarmTint
+232 247 240   OffWhite-CoolTint
+
+122 78 0      Yellow-DeepShadow
+185 126 18    Yellow-Shadow
+229 168 50    Yellow-Mid
+255 196 61    Yellow-Base
+255 231 163   Yellow-Highlight
+255 179 0     Yellow-Accent
+
+94 26 42      Red-DeepShadow
+165 44 71     Red-Shadow
+214 60 97     Red-Mid
+239 71 111    Red-Base
+255 143 168   Red-Highlight
+255 47 106    Red-Accent
+
+10 58 64      Teal-DeepShadow
+19 108 117    Teal-Shadow
+23 138 150    Teal-Mid
+27 154 170    Teal-Base
+126 212 223   Teal-Highlight
+15 196 216    Teal-Accent
+
+2 79 60       Mint-DeepShadow
+4 138 106     Mint-Shadow
+5 185 138     Mint-Mid
+6 214 160     Mint-Base
+127 243 214   Mint-Highlight
+0 255 191     Mint-Accent
+
+26 26 26      Grey-Deep
+58 58 58      Grey-Dark
+106 106 106   Grey-Mid
+175 175 175   Grey-Light
+230 230 230   Grey-Highlight
