@@ -13,7 +13,17 @@ config_version=5
 config/name="whisper"
 run/main_scene="uid://id1kd1mifbv8"
 config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/bg_color=Color(0.10980392, 0.06666667, 0.039215688, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*uid://c5qkntt6q4l7x"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
@@ -55,3 +65,4 @@ right={
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.10980392, 0.06666667, 0.039215688, 1)

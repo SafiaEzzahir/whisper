@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://baadifnmgisf0"]
+
+[ext_resource type="Script" uid="uid://cl2cwhjckkoix" path="res://scripts/npc_stats.gd" id="1_0nd5c"]
+
+[node name="npc_stats" type="Node" unique_id=1234027666]
+script = ExtResource("1_0nd5c")
+
+[node name="top" type="Label" parent="." unique_id=96384885]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "friendship levels"

@@ -50,6 +50,7 @@ animations = [{
 size = Vector2(95, 86)
 
 [node name="Player" type="CharacterBody2D" unique_id=1843388218]
+z_index = 2
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_kfe3d")
@@ -68,5 +69,9 @@ shape = SubResource("RectangleShape2D_uwrxv")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1818113701]
 position = Vector2(178, 249)
+limit_left = -400
+limit_top = -63
+limit_right = 1286
+limit_bottom = 841
 position_smoothing_enabled = true
 position_smoothing_speed = 6.0
