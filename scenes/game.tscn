@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://id1kd1mifbv8"]
 
+[ext_resource type="Script" uid="uid://c5qkntt6q4l7x" path="res://scripts/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://cogb26gja4t3v" path="res://art/tilemap1.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://ddoxgtt0o2f10" path="res://components/player/player.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://d4e6s4v0cljlc" path="res://components/houses/house.tscn" id="4_lbhrr"]
@@ -17,6 +18,7 @@ texture = ExtResource("1_yqjtg")
 sources/1 = SubResource("TileSetAtlasSource_lnu2h")
 
 [node name="game" type="Node" unique_id=2065466732]
+script = ExtResource("1_lbhrr")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1264848601]
 texture_filter = 1

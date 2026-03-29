@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dnwg0yh8ew0li"]
+
+[ext_resource type="Texture2D" uid="uid://groqkie3dk6o" path="res://art/npc2.png" id="1_r4nbi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vsdlh"]
+size = Vector2(51, 121)
+
+[node name="npc" type="Node" unique_id=243662007]
+
+[node name="body" type="RigidBody2D" parent="." unique_id=441381709]
+position = Vector2(446, 362)
+
+[node name="sprite" type="Sprite2D" parent="body" unique_id=1417252550]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_r4nbi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="body" unique_id=680032139]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_vsdlh")
