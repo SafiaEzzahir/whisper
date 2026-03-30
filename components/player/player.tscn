@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c7syvrrdhmpma" path="res://scripts/player.gd" id="1_kfe3d"]
 [ext_resource type="Texture2D" uid="uid://ch05ba3ch8es3" path="res://art/player.png" id="2_kfe3d"]
+[ext_resource type="Texture2D" uid="uid://dnf3t85uf5nwf" path="res://art/hint.png" id="3_ph1f6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ph1f6"]
 atlas = ExtResource("2_kfe3d")
@@ -74,5 +75,15 @@ limit_left = 4
 limit_top = 0
 limit_right = 1605
 limit_bottom = 965
-position_smoothing_enabled = true
 position_smoothing_speed = 6.0
+
+[node name="hint" type="Button" parent="." unique_id=1201961175]
+texture_filter = 1
+offset_left = 1065.0
+offset_top = 12.0
+offset_right = 1136.0
+offset_bottom = 84.0
+icon = ExtResource("3_ph1f6")
+flat = true
+icon_alignment = 1
+expand_icon = true

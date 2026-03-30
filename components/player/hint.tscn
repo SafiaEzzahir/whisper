@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bbmi7jwji3wuu"]
+
+[ext_resource type="Texture2D" uid="uid://bblb528lrv7q3" path="res://art/hinttext.png" id="1_vp2ju"]
+
+[node name="hint" type="Node" unique_id=1552478059]
+
+[node name="hintrect" type="TextureRect" parent="." unique_id=682297764]
+offset_left = 572.0
+offset_top = 171.0
+offset_right = 1024.0
+offset_bottom = 541.0
+texture = ExtResource("1_vp2ju")
+stretch_mode = 5
