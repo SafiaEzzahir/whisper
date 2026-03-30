@@ -13,7 +13,7 @@ func _ready():
 	
 	var friends = Game.chars[self_index]
 	for friend in friends:
-		if not friend == "name":
+		if not friend == "name" and not friend == "img":
 			spacing += 20
 			var lbl = stat_label.instantiate()
 			add_child(lbl)

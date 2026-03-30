@@ -26,15 +26,13 @@ var outside_node = null
 func _ready() -> void:
 	order = []
 	chars = [
-		{"name": "louisa"},
-		{"name": "safia"}, 
-		{"name": "mellina"},
-		{"name": "hassan"}
 	]
 
 	char_nodes = []
 	nodes_created = false
 	random.randomize()
+	
+func start():
 	order = generate_order()
 	
 func generate_order():
@@ -59,7 +57,7 @@ func choose_next(current):
 	var best_score = -1
 	
 	for key in current.keys():
-		if key == "name":
+		if key == "name" or key == "img":
 			continue
 		
 		if key in order:
@@ -97,7 +95,7 @@ func instantiate_char_sprite():
 			if outside_node != i["name"]:
 				var c = char_node.instantiate()
 				
-				c.get_node("body/sprite").texture = char_images[random.randi_range(0, char_images.size() - 1)]
+				c.get_node("body/sprite").texture = i["img"]
 				
 				if available_poses.size() > 0:
 					var pos_index = random.randi_range(0, available_poses.size() - 1)

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dkpk1x35hi5b3"]
+
+[ext_resource type="Script" uid="uid://5y4hibdd1qjs" path="res://scripts/new_char.gd" id="1_tflh2"]
+[ext_resource type="Texture2D" uid="uid://3jnww1sutkoo" path="res://art/npc1.png" id="2_plubx"]
+
+[node name="new_char" type="Node2D" unique_id=427144528]
+script = ExtResource("1_tflh2")
+
+[node name="name" type="TextEdit" parent="." unique_id=1029982680]
+offset_right = 89.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "name"
+
+[node name="change_img" type="Button" parent="." unique_id=167137859]
+texture_filter = 1
+offset_left = 98.0
+offset_top = 3.0
+offset_right = 139.0
+offset_bottom = 49.0
+icon = ExtResource("2_plubx")
+icon_alignment = 1
+expand_icon = true
