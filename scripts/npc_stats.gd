@@ -2,10 +2,15 @@ extends Node
 
 const stat_label = preload("res://components/characters/npc_stat_label.tscn")
 
-var self_index = 0 #change but howwww??
+var rent
+var self_index
+
 var spacing = 40
 
 func _ready():
+	rent = get_parent()
+	self_index = rent.npc_index
+	
 	var friends = Game.chars[self_index]
 	for friend in friends:
 		if not friend == "name":

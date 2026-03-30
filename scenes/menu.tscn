@@ -1,3 +1,31 @@
 [gd_scene format=3 uid="uid://rjgsv3ttnrqw"]
 
+[ext_resource type="Script" uid="uid://cq8sdm2bqkh5g" path="res://scripts/menu.gd" id="1_yqeox"]
+
 [node name="menu" type="Node" unique_id=1172754283]
+script = ExtResource("1_yqeox")
+
+[node name="add" type="Button" parent="." unique_id=2131723420]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 506.0
+offset_right = -462.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "add a character"
+
+[node name="play" type="Button" parent="." unique_id=1797949253]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 493.0
+offset_top = 578.0
+offset_right = -492.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "play"

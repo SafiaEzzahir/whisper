@@ -57,21 +57,22 @@ script = ExtResource("1_kfe3d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=543360142]
 texture_filter = 1
-position = Vector2(179, 248)
+position = Vector2(576, 325)
 scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_uwrxv")
 frame_progress = 0.034219414
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1259944445]
 z_index = 1
-position = Vector2(176.5, 249)
+position = Vector2(573.5, 326)
 shape = SubResource("RectangleShape2D_uwrxv")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1818113701]
-position = Vector2(178, 249)
-limit_left = -400
-limit_top = -63
-limit_right = 1286
-limit_bottom = 841
+position = Vector2(575, 326)
+limit_enabled = false
+limit_left = 4
+limit_top = 0
+limit_right = 1605
+limit_bottom = 965
 position_smoothing_enabled = true
 position_smoothing_speed = 6.0
